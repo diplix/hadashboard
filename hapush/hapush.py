@@ -191,7 +191,7 @@ def readDash(file):
   input = re.compile('data-input\s*?=\s*?"(.+?)"')
   view = re.compile('data-view\s*?=\s*?"(.+?)"')
   
-  with open(file) as f:
+  with open(file, encoding='utf8') as f:
     for line in f:
       
       data_id = ""
